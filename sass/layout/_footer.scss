@@ -1,0 +1,26 @@
+@use "../util" as u;
+
+.footer {
+  margin-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include u.breakpoint(medium) {
+    flex-direction: row;
+  }
+  .product {
+    display: flex;
+    gap: 20px;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h2 {
+        color: var(--Grayish-blue);
+      }
+    }
+  }
+}
